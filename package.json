@@ -1,0 +1,28 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "buildcss:dev": "tailwindcss build ./main.css -o public/styles.css",
+    
+    "buildcss:prod": "cross-env NODE_ENV=production postcss build ./main.css -o ./public/styles.css",
+
+    "onchange": "onchange 'tailwind.config.js' 'main.css' -- npm run buildcss:dev",
+
+    "serve": "live-server public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.2.1",
+    "cross-env": "^7.0.3",
+    "cssnano": "^4.1.10",
+    "live-server": "^1.2.1",
+    "onchange": "^7.1.0",
+    "postcss": "^8.2.4",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.2"
+  }
+}
