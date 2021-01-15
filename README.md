@@ -1,4 +1,6 @@
-# My static website
+# LinkedIn Clone using Tailwind CSS
+
+[Live link](https://linkedin-tailwind.netlify.app)
 
 ## Run in dev mode
 

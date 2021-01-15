@@ -1,11 +1,11 @@
 {
-  "name": "demo",
+  "name": "linkedin",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "buildcss:dev": "tailwindcss build ./main.css -o public/styles.css",
-    
+
     "buildcss:prod": "cross-env NODE_ENV=production postcss build ./main.css -o ./public/styles.css",
 
     "onchange": "onchange 'tailwind.config.js' 'main.css' -- npm run buildcss:dev",
